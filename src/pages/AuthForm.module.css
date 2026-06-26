@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.wrapper {
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.titulo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--clr-text);
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+/* ── Formulario ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Campo individual */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-muted);
+}
+
+/* Input base */
+.input {
+  background-color: #0d0e10;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  color: var(--clr-text);
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #383840;
+}
+
+.input:focus {
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px var(--clr-accent-glow);
+}
+
+/* Mensajes de feedback (Errores) */
+.errorMessage {
+  font-size: 0.8rem;
+  color: #ff3c5a;
+  background-color: rgba(255, 60, 90, 0.08);
+  border: 1px solid rgba(255, 60, 90, 0.15);
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+}
+
+/* Botón de Enviar de ancho completo */
+.btnAccion {
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0d0e10;
+  background-color: var(--clr-accent);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  width: 100%;
+}
+
+.btnAccion:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 15px var(--clr-accent-glow);
+}
+
+.btnAccion:active {
+  transform: scale(0.98);
+}
+
+.navLink {
+  margin-left: 5px;
+  color: var(--clr-accent)
+}
