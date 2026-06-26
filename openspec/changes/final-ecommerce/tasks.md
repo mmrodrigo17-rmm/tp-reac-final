@@ -36,10 +36,10 @@ Chain strategy: pending
 
 ## Phase 2 — Contextos
 
-- [ ] 2.1 `src/context/BusquedaContext.jsx`: `busqueda` + `setBusqueda` state
-- [ ] 2.2 `src/context/AuthContext.jsx`: `onAuthStateChanged` → `getDoc(cliente/{uid})` for rol; expose `user`, `loading`, `signup`, `login`, `logout`
-- [ ] 2.3 `src/context/ProductosContext.jsx`: CRUD on `productos-nacionales`; wire `usePaginacion`; expose `productos`, `cargando`, pagination methods
-- [ ] 2.4 `src/context/CartContext.jsx`: naming español (`agregarACarrito`, `precio`, `cantidad`, `vaciarCarrito`, `incrementarCantidad`, `decrementarCantidad`)
+- [x] 2.1 `src/context/BusquedaContext.jsx`: `busqueda` + `setBusqueda` state
+- [x] 2.2 `src/context/AuthContext.jsx`: `onAuthStateChanged` → `getDoc(cliente/{uid})` for rol; expose `user`, `loading`, `signup`, `login`, `logout`
+- [x] 2.3 `src/context/ProductosContext.jsx`: CRUD on `productos-nacionales`; wire `usePaginacion`; expose `productos`, `cargando`, pagination methods
+- [x] 2.4 `src/context/CartContext.jsx`: naming español (`agregarACarrito`, `precio`, `cantidad`, `vaciarCarrito`, `incrementarCantidad`, `decrementarCantidad`)
 
 ## Phase 3 — Hooks + Layout
 
