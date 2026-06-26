@@ -1,0 +1,222 @@
+.container {
+  --clr-bg: #111214;
+  --clr-surface: #18191d;
+  --clr-border: rgba(255, 255, 255, 0.07);
+  --clr-text: #f0f0f0;
+  --clr-muted: #808090;
+  --clr-accent: #c9a84c;
+  --clr-accent-glow: rgba(201, 168, 76, 0.18);
+  --clr-success: #34d399;
+  --radius: 20px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  min-height: 100vh;
+  color: var(--clr-text);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Layout Principal ────────────────────────────────────── */
+.mainContent {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: var(--clr-surface);
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--clr-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  .mainContent { grid-template-columns: 1fr; gap: 30px; padding: 25px; }
+}
+
+/* ── Imagen Detalle ──────────────────────────────────────── */
+.imageWrapper {
+  position: relative;
+  border-radius: calc(var(--radius) - 4px);
+  overflow: hidden;
+  background: #0d0e10;
+  border: 1px solid var(--clr-border);
+  aspect-ratio: 1 / 1;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--transition);
+}
+
+.imageWrapper:hover .imagen {
+  transform: scale(1.05);
+}
+
+/* ── Info del Producto ───────────────────────────────────── */
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nombre {
+  margin: 0;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: left;
+  line-height: 1.1;
+  color: var(--clr-text);
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--clr-muted);
+}
+
+.precio {
+  font-family: 'DM Mono', monospace;
+  font-size: 2.5rem;
+  color: var(--clr-accent);
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.moneda {
+  font-size: 1rem;
+  color: var(--clr-muted);
+  text-transform: uppercase;
+}
+
+/* ── Botón Compra ────────────────────────────────────────── */
+.btnCarrito {
+  padding: 16px 32px;
+  background: var(--clr-accent);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-top: auto;
+}
+
+.btnCarrito:hover {
+  background: #e0bc5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--clr-accent-glow);
+}
+
+/* ── Seccion Opiniones ───────────────────────────────────── */
+.opinionesSection {
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.opinionesTitle {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--clr-accent);
+  padding-left: 15px;
+}
+
+.opinionCard {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: border-color var(--transition);
+}
+
+.opinionCard:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.clienteNombre {
+  color: var(--clr-accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  font-family: 'DM Mono', monospace;
+}
+
+/* ── Agregados para Categoría, Stock y Cargando Local ────── */
+
+.categoriaBadge {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--clr-border);
+  color: var(--clr-accent);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stockWrapper {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.stockDisponible {
+  color: var(--clr-muted);
+  margin: 0;
+}
+
+.stockDisponible strong {
+  color: var(--clr-text);
+}
+
+.stockAgotado {
+  color: #f43f5e; /* Color rojizo para advertencia */
+  font-weight: 600;
+  margin: 0;
+}
+
+.cargandoOpinionesBox {
+  padding: 30px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: 15px;
+  text-align: center;
+  color: var(--clr-muted);
+  font-style: italic;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pequeña animación para que el cargando de opiniones quede pro */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* Modificación del botón para cuando está deshabilitado por falta de stock */
+.btnCarrito:disabled {
+  background: #2a2c30;
+  color: var(--clr-muted);
+  border: 1px solid var(--clr-border);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

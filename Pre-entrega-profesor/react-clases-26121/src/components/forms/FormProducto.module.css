@@ -1,0 +1,177 @@
+.wrapper {
+  padding: 0.25rem 0;
+}
+
+.titulo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--clr-text);
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+/* ── Formulario ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Campo individual */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-muted);
+}
+
+/* Input base */
+.input {
+  background-color: #0d0e10;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  color: var(--clr-text);
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #383840;
+}
+
+.input:focus {
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px var(--clr-accent-glow);
+}
+
+/* Textarea */
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+/* Select */
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23808090' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.select option {
+  background-color: #111214;
+  color: var(--clr-text);
+}
+
+/* Fila de dos columnas */
+.fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Input con prefijo $ */
+.inputConPrefijo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.prefijo {
+  position: absolute;
+  left: 1rem;
+  font-size: 0.88rem;
+  color: var(--clr-muted);
+  pointer-events: none;
+  font-family: 'DM Mono', monospace;
+}
+
+.inputConEspacio {
+  padding-left: 1.75rem;
+}
+
+/* ── File input ── */
+.fileLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+/* Oculta el input nativo */
+.fileInput {
+  display: none;
+}
+
+.fileBtn {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  background: transparent;
+  border: 1px solid var(--clr-accent);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.fileLabel:hover .fileBtn {
+  background-color: var(--clr-accent-glow);
+}
+
+.fileName {
+  font-size: 0.8rem;
+  color: var(--clr-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.btnGuardar {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0d0e10;
+  background-color: var(--clr-accent);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  align-self: flex-end;
+}
+
+.btnGuardar:hover {
+  opacity: 0.88;
+}
+
+.btnGuardar:active {
+  transform: scale(0.97);
+}
+
+.btnGuardar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
