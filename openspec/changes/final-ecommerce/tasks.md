@@ -75,12 +75,12 @@ Chain strategy: pending
 
 ## Phase 7 — Carrito
 
-- [ ] 7.1 `src/pages/Carrito.jsx` + `.module.css`: consume CartContext, product rows, increment/decrement, total, "Vaciar carrito" with confirm
+- [x] 7.1 `src/pages/Carrito.jsx` + `.module.css`: consume CartContext, product rows, increment/decrement, total, "Vaciar carrito" with confirm
 
 ## Phase 8 — Routing + SEO
 
-- [ ] 8.1 `src/App.jsx`: all routes (`/`, `/producto/:id`, `/login`, `/registro`, `/carrito`, `/dashboard`, `/contacto`, `/busqueda`) with RutasProtegidas, Layout
-- [ ] 8.2 `<Helmet>` in every page component: unique title `"{Page} — Tienda Nacional"` + meta description
+- [x] 8.1 `src/App.jsx`: all routes (`/`, `/producto/:id`, `/login`, `/registro`, `/carrito`, `/dashboard`, `/contacto`, `/busqueda`) with RutasProtegidas, Layout
+- [x] 8.2 `<Helmet>` in every page component: unique title `"{Page} — Tienda Nacional"` + meta description
 
 ## Phase 9 — Docs + Deploy
 
