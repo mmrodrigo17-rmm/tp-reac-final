@@ -68,9 +68,10 @@ Chain strategy: pending
 
 ## Phase 6 — Dashboard (admin)
 
-- [ ] 6.1 `src/components/forms/Dashboard.jsx` + `.module.css`: product table + modal toggle + delete confirm
-- [ ] 6.2 `src/components/forms/FormContainer.jsx`: modal wrapper, ImgBB upload, form state logic
-- [ ] 6.3 `src/components/forms/FormProducto.jsx` + `.module.css`: controlled form with categoria select, nombre/precio/stock/imagen/descripcion
+- [x] 6.1 `src/components/forms/Dashboard.jsx` + `.module.css`: product table + modal toggle + delete confirm
+- [x] 6.2 `src/components/forms/FormContainer.jsx`: modal wrapper, ImgBB upload, form state logic
+- [x] 6.3 `src/components/forms/FormProducto.jsx` + `.module.css`: controlled form with categoria select, nombre/precio/stock/imagen/descripcion
+- [x] 6.4 `src/assets/icons/EditIcon.jsx` + `TrashIcon.jsx`: SVG icon components from profesor's reference
 
 ## Phase 7 — Carrito
 
