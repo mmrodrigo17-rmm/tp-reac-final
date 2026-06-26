@@ -43,11 +43,12 @@ Chain strategy: pending
 
 ## Phase 3 — Hooks + Layout
 
-- [ ] 3.1 `src/hooks/usePaginacion.jsx`: cursor-based with `getCountFromServer`, `startAfter`, `limit`, page numbers
-- [ ] 3.2 `src/components/Paginacion.jsx` + `.module.css`: prev/next + page number buttons
-- [ ] 3.3 `src/components/RutasProtegidas.jsx`: guard by `rolesPermitidos` array; redirect to `/login` if unauthenticated
+- [x] 3.1 `src/hooks/usePaginacion.jsx`: cursor-based with `getCountFromServer`, `startAfter`, `limit`, page numbers
+- [x] 3.2 `src/components/Paginacion.jsx` + `.module.css`: prev/next + page number buttons
+- [x] 3.3 `src/components/RutasProtegidas.jsx`: guard by `rolesPermitidos` array; redirect to `/login` if unauthenticated
 - [ ] 3.4 `src/components/Contador.jsx`: reusable count badge
-- [ ] 3.5 Layout files: `Layout.jsx`, `Header.jsx`, `Nav.jsx`, `Footer.jsx` + 4 CSS Modules
+- [x] 3.5 Layout files: `Layout.jsx`, `Header.jsx`, `Nav.jsx`, `Footer.jsx` + 4 CSS Modules
+- [x] Prerequisites: `assets/icons/Config.jsx`, `assets/icons/Cart.jsx`, `components/search/BarraBusqueda.jsx` + `.module.css`
 
 ## Phase 4 — Productos
 

@@ -1,34 +1,24 @@
 .navContainer {
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .navList {
-  list-style: none;
   display: flex;
   gap: 1.5rem;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navLink {
+  color: var(--clr-muted);
   text-decoration: none;
-  color: #333;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  transition: color 0.2s ease;
 }
 
 .navLink:hover {
-  background-color: #e9ecef;
-}
-
-.activeLink {
-  text-decoration: none;
-  color: white;
-  background-color: #007bff;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  color: var(--clr-text);
 }
