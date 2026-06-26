@@ -46,7 +46,7 @@ Chain strategy: pending
 - [x] 3.1 `src/hooks/usePaginacion.jsx`: cursor-based with `getCountFromServer`, `startAfter`, `limit`, page numbers
 - [x] 3.2 `src/components/Paginacion.jsx` + `.module.css`: prev/next + page number buttons
 - [x] 3.3 `src/components/RutasProtegidas.jsx`: guard by `rolesPermitidos` array; redirect to `/login` if unauthenticated
-- [ ] 3.4 `src/components/Contador.jsx`: reusable count badge
+- [x] 3.4 `src/components/Contador.jsx`: reusable count badge (optional, no imports depend on it)
 - [x] 3.5 Layout files: `Layout.jsx`, `Header.jsx`, `Nav.jsx`, `Footer.jsx` + 4 CSS Modules
 - [x] Prerequisites: `assets/icons/Config.jsx`, `assets/icons/Cart.jsx`, `components/search/BarraBusqueda.jsx` + `.module.css`
 
@@ -61,10 +61,10 @@ Chain strategy: pending
 
 ## Phase 5 — Auth UI
 
-- [ ] 5.1 `src/pages/Login.jsx`: email/password form, Firebase error mapping, Helmet
-- [ ] 5.2 `src/pages/Registro.jsx`: form + `setDoc(cliente/{uid})` with rol `usuario`, Helmet
-- [ ] 5.3 `src/components/search/BarraBusqueda.jsx` + `.module.css`: input + search icon, `setBusqueda` + `navigate(/busqueda)`
-- [ ] 5.4 `src/components/search/ResultadoBusqueda.jsx` + `.module.css`: client-side filter on `productos[]`, "No se encontraron productos"
+- [x] 5.1 `src/pages/Login.jsx`: email/password form, Firebase error mapping, Helmet
+- [x] 5.2 `src/pages/Registro.jsx`: form + `setDoc(cliente/{uid})` with rol `usuario`, Helmet
+- [x] 5.3 `src/components/search/BarraBusqueda.jsx` + `.module.css`: input + search icon, `setBusqueda` + `navigate(/busqueda)`
+- [x] 5.4 `src/components/search/ResultadoBusqueda.jsx` + `.module.css`: client-side filter on `productos[]`, "No se encontraron productos"
 
 ## Phase 6 — Dashboard (admin)
 
@@ -85,5 +85,5 @@ Chain strategy: pending
 ## Phase 9 — Docs + Deploy
 
 - [x] 9.1 `index.html`: `lang="es"`, title "Juancho Store", favicon
-- [ ] 9.2 `.gitignore`: add `.env`
-- [ ] 9.3 `README.md`: install, Firebase setup (project + Auth + Firestore + security rules), seed admin user, deploy to Vercel
+- [x] 9.2 `.gitignore`: add `.env`
+- [x] 9.3 `README.md`: install, Firebase setup (project + Auth + Firestore + security rules), seed admin user, deploy to Vercel
