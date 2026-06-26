@@ -15,6 +15,13 @@ build/
 .env.test.local
 .env.production.local
 
+# Firebase
+.firebase/
+
+# Logs
+*.log
+npm-debug.log*
+
 # IDE
 .vscode/
 .idea/
