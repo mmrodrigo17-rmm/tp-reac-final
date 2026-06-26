@@ -1,0 +1,50 @@
+/* ItemList.module.css */
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+  padding: 4px 2px; /* pequeño padding para que las sombras hover no se corten */
+}
+
+/* ── Breakpoints explícitos (para control fino) ─────── */
+@media (max-width: 480px) {
+  .grilla {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grilla {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 28px;
+  }
+}
+
+/* ── Animación de entrada escalonada ────────────────── */
+.grilla > * {
+  animation: fadeSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.grilla > *:nth-child(1)  { animation-delay: 0.04s; }
+.grilla > *:nth-child(2)  { animation-delay: 0.08s; }
+.grilla > *:nth-child(3)  { animation-delay: 0.12s; }
+.grilla > *:nth-child(4)  { animation-delay: 0.16s; }
+.grilla > *:nth-child(5)  { animation-delay: 0.20s; }
+.grilla > *:nth-child(6)  { animation-delay: 0.24s; }
+.grilla > *:nth-child(7)  { animation-delay: 0.28s; }
+.grilla > *:nth-child(8)  { animation-delay: 0.32s; }
+.grilla > *:nth-child(n+9) { animation-delay: 0.36s; }
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

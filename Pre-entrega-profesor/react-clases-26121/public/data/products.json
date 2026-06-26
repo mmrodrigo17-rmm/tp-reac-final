@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lwqN1PRqYtZiiX7FCuOg",
+    "nombre": "Moto GP 2026",
+    "precio": 85000,
+    "stock": 22,
+    "imagen": "https://gaming-cdn.com/images/products/22006/616x353/motogp-26-pc-steam-cover.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Camara Nikon",
+    "precio": 97500,
+    "stock": 2,
+    "imagen": "/images/CamaraNikon.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor Curvo",
+    "precio": 110000,
+    "stock": 2,
+    "imagen": "/images/MonitorCurvo.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor Asus",
+    "precio": 120000,
+    "stock": 10,
+    "imagen": "/images/MonitorAsus.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Mouse",
+    "precio": 45000,
+    "stock": 15,
+    "imagen": "/images/Mouse.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Notebook Pro",
+    "precio": 60000,
+    "stock": 8,
+    "imagen": "/images/NotebookPro.jpeg"
+  },
+  {
+    "id": 7,
+    "nombre": "Teclado Mecanico",
+    "precio": 150000,
+    "stock": 5,
+    "imagen": "/images/TecladoMecanico.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Windows 11",
+    "precio": 90000,
+    "stock": 12,
+    "imagen": "/images/Windows11.jpg"
+  }
+]

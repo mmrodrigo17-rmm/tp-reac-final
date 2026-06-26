@@ -28,11 +28,11 @@ Chain strategy: pending
 
 ## Phase 1 — Foundation
 
-- [ ] 1.1 `package.json`: add `firebase`, `react-icons`, `react-helmet-async`; run `npm install`
-- [ ] 1.2 `src/firebase/config.js`: `initializeApp` + `getFirestore` export `db`
-- [ ] 1.3 `src/index.css`: dark theme with `--clr-*` CSS vars (teacher's exact vars)
-- [ ] 1.4 `src/main.jsx`: provider chain `HelmetProvider > BrowserRouter > BusquedaProvider > AuthProvider > ProductosProvider > CarritoProvider`
-- [ ] 1.5 `src/App.css`: reset global + `.app` wrapper
+- [x] 1.1 `package.json`: add `firebase`, `react-icons`, `react-helmet-async`; run `npm install`
+- [x] 1.2 `src/firebase/config.js`: `initializeApp` + `getFirestore` export `db`
+- [x] 1.3 `src/index.css`: dark theme with `--clr-*` CSS vars (teacher's exact vars)
+- [x] 1.4 `src/main.jsx`: provider chain `HelmetProvider > BrowserRouter > BusquedaProvider > AuthProvider > ProductosProvider > CarritoProvider`
+- [x] 1.5 `src/App.css`: reset global + `.app` wrapper
 
 ## Phase 2 — Contextos
 
@@ -80,6 +80,6 @@ Chain strategy: pending
 
 ## Phase 9 — Docs + Deploy
 
-- [ ] 9.1 `index.html`: `lang="es"`, title, favicon
+- [x] 9.1 `index.html`: `lang="es"`, title "Juancho Store", favicon
 - [ ] 9.2 `.gitignore`: add `.env`
 - [ ] 9.3 `README.md`: install, Firebase setup (project + Auth + Firestore + security rules), seed admin user, deploy to Vercel
