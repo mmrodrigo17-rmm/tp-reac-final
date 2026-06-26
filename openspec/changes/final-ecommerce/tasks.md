@@ -52,10 +52,12 @@ Chain strategy: pending
 
 ## Phase 4 — Productos
 
-- [ ] 4.1 `src/components/items/Item.jsx` + `.module.css`: card with image, name, price, fav toggle, "Agregar" feedback
-- [ ] 4.2 `src/components/items/ItemList.jsx` + `.module.css`: responsive grid
-- [ ] 4.3 `src/components/items/ItemListContainer.jsx` + `.module.css`: consumes ProductosContext + Paginacion + spinner
-- [ ] 4.4 `src/pages/DetalleProducto.jsx` + `.module.css`: stock, categoria, opiniones via `onSnapshot(opiniones)`, Helmet
+- [x] 4.1 `src/components/items/Item.jsx` + `.module.css`: card with image, name, price, fav toggle, "Agregar" feedback
+- [x] 4.2 `src/components/items/ItemList.jsx` + `.module.css`: responsive grid with staggered animation
+- [x] 4.3 `src/components/items/ItemListContainer.jsx` + `.module.css`: consumes ProductosContext + Paginacion + spinner
+- [x] 4.4 `src/pages/DetalleProducto.jsx` + `.module.css`: stock, categoria, opiniones via `onSnapshot(opiniones)`, Helmet
+- [x] 4.5 `src/components/items/ProductoNacional.jsx`: legacy component fetching from `productos-nacionales` collection
+- [x] 4.6 CSS Modules: all `.module.css` files created for items/ components and DetalleProducto
 
 ## Phase 5 — Auth UI
 
